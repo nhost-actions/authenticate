@@ -16,7 +16,7 @@ jobs:
       id: install-nhost-cli
       uses: nhost-actions/install-nhost-cli@v1
 
-    - name: Authenticate
+    - name: Authenticate with Nhost
       uses: ./
       with:
         pat: some-fake-pat
