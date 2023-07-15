@@ -1,0 +1,12 @@
+name: 'Authenticate'
+description: 'Authenticates with the Nhost Cloud'
+inputs:
+  pat:
+    description: "Personal Access Token to use"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        nhost login --pat ${{ inputs.pat }}
+      shell: bash
