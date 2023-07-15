@@ -23,5 +23,7 @@ jobs:
 
     - name: verify
       run: |
+        nhost --help
+        nhost login --help
         cat ~/.nhost/auth.json
       shell: bash
