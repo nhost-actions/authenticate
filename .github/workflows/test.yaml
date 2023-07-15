@@ -23,5 +23,5 @@ jobs:
 
     - name: verify
       run: |
-        cat $XDG_STATE_HOME/nhost/auth.json
+        cat ~/.nhost/state/auth.json
       shell: bash
